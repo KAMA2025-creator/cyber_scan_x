@@ -14,8 +14,7 @@ import openai       # Sert à envoyer une demande à ChatGPT pour générer un r
 # Remplace la chaîne ci-dessous par ta vraie clé (entre guillemets)
 # ⚠️ Ne partage jamais cette clé publiquement !
 # ----------------------------------------------------------------------
-openai.api_key = "CLE_SUPPRIMEE"
-
+openai.api_key = input("🔐 Entrez votre clé OpenAI : ")
 # ----------------------------------------------------------------------
 # 🔹 Fonction 1 : Demander une adresse IP à l’utilisateur
 # ----------------------------------------------------------------------
@@ -141,7 +140,7 @@ while True:
 
         # Étape 5 : Générer un rapport automatique avec OpenAI
         print("\n" + "-"*60)
-        print("🧠 Rapport  :")
+        print("🧠 Rapport :")
         print("-"*60)
         rapport = generer_rapport(infos)
         if rapport:
